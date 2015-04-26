@@ -5,15 +5,15 @@ class StrategyExample:
             self.execute = func
 
     def execute(self):
-        print "Original execution"
+        print("Original execution")
 
 
 def executeReplacement1(self):
-        print "Strategy 1"
+        print("Strategy 1")
 
 
 def executeReplacement2(self):
-    print "Strategy 2"
+    print("Strategy 2")
 
 if __name__ == "__main__":
 
@@ -22,8 +22,8 @@ if __name__ == "__main__":
     strat2 = StrategyExample(executeReplacement2)
 
     strat0.execute()
-    strat1.execute()
-    strat2.execute()
+    strat1.execute('')
+    strat2.execute('')
 
 # -------------------- With classes --------------------
 
@@ -33,7 +33,7 @@ class AUsefulThing(object):
         self.howToDoX = aStrategicAlternative
 
     def doX(self, someArg):
-        self. howToDoX.theAPImethod(someArg, self)
+        self. howToDoX.theAPIMethod(someArg, self)
 
 
 class StrategicAlternative(object):
