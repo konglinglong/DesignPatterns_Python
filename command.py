@@ -85,7 +85,7 @@ class HistoryCommand(Command):
             i = i + 1
 
     def name(self):
-        print "history"
+        print("history")
 
 
 # exit command
@@ -112,7 +112,7 @@ def main():
             console.flush()
             console.write("pysh >> ")
 
-            cmd = raw_input()
+            cmd = input()
 
             try:
                 command = COMMANDS[cmd]

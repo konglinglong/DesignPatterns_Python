@@ -7,7 +7,7 @@ def time_this(func):
     def decorated(*args, **kwargs):
         start = time.time()
         result = func(*args, **kwargs)
-        print 'Rain in', time.time() - start, 'seconds'
+        print('Rain in', time.time() - start, 'seconds')
         return result
     return decorated
 
@@ -17,9 +17,9 @@ def time_this(func):
 def count(until):
     """Counts to 'until', then returns the result"""
 
-    print "Counting to", until, "…"
+    print("Counting to", until, "…")
     num = 0
-    for i in xrange(to_num(until)):
+    for i in range(to_num(until)):
         num += 1
     return num
 
@@ -30,5 +30,5 @@ def to_num(numstr):
 
 # Run count with various values
 for number in ("10,000", "100,000", "1,000,000"):
-    print count(number)
-    print "-" * 20
+    print(count(number))
+    print("-" * 20)

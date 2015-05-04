@@ -9,13 +9,13 @@ class DrawingAPI:
 # ConcreteImplementor 1/2
 class DrawingAPI1(DrawingAPI):
     def drawCircle(self, x, y, radius):
-            print "API1.circle at %f:%f radius %f" % (x, y, radius)
+            print("API1.circle at %f:%f radius %f" % (x, y, radius))
 
 
 # ConcreteImplementor 2/2
 class DrawingAPI2(DrawingAPI):
     def drawCircle(self, x, y, radius):
-            print "API2.circle at %f:%f radius %f" % (x, y, radius)
+            print("API2.circle at %f:%f radius %f" % (x, y, radius))
 
 
 # Abstraction

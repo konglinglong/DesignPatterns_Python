@@ -10,7 +10,7 @@ class Adapter:
         return self.adaptee.specific_request()
 
 client = Adapter(Adaptee())
-print client.request()
+print(client.request())
 
 # --------- Second example (by Alex Martelli)------------
 

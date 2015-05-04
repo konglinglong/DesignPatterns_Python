@@ -11,7 +11,7 @@ class Leaf(Component):
         Component.__init__(self, *args, **kw)
 
     def component_function(self):
-        print "some function"
+        print("some function")
 
 
 class Composite(Component):
@@ -26,7 +26,7 @@ class Composite(Component):
         self.children.remove(child)
 
     def component_function(self):
-        map(lambda x: x.component_function(), self.children)
+        list(map(lambda x: x.component_function(), self.children))
 
 c = Composite()
 l = Leaf()

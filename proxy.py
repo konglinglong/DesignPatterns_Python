@@ -49,7 +49,7 @@ class Proxy(IMath):
 
 p = Proxy()
 x, y = 4, 2
-print '4 + 2 = ' + str(p.add(x, y))
-print '4 - 2 = ' + str(p.sub(x, y))
-print '4 * 2 = ' + str(p.mul(x, y))
-print '4 / 2 = ' + str(p.div(x, y))
+print('4 + 2 = ' + str(p.add(x, y)))
+print('4 - 2 = ' + str(p.sub(x, y)))
+print('4 * 2 = ' + str(p.mul(x, y)))
+print('4 / 2 = ' + str(p.div(x, y)))

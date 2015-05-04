@@ -27,8 +27,7 @@ class copyier:
         return newinst
 
 
-class Point:
-    __metaclass__ = Prototype
+class Point(metaclass=Prototype):
     x = 0
     y = 0
 
@@ -37,14 +36,14 @@ class Point:
         self.y += y
 
 a = Point()
-print a.x, a.y          # prints 0 0
+print(a.x, a.y)          # prints 0 0
 a.move(100, 100)
-print a.x, a.y          # prints 100 100
+print(a.x, a.y)          # prints 100 100
 
 Point.move(50, 50)
-print Point.x, Point.y  # prints 50 50
+print(Point.x, Point.y)  # prints 50 50
 p = Point()
-print p.x, p.y          # prints 50 50
+print(p.x, p.y)          # prints 50 50
 
 q = p()
-print q.x, q.y          # prints 50 50
+print(q.x, q.y)          # prints 50 50

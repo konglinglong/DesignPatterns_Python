@@ -12,9 +12,9 @@ class PetShop:
     def show_pet(self):
         """Creates and shows a pet using the abstract factory"""
         pet = self.pet_factory.get_pet()
-        print "This is a lovely", pet
-        print "It says", pet.speak()
-        print "It eats", self.pet_factory.get_food()
+        print("This is a lovely", pet)
+        print("It says", pet.speak())
+        print("It eats", self.pet_factory.get_food())
 
 # Stuff that our factory makes
 
@@ -62,4 +62,4 @@ shop = PetShop()
 for i in range(3):
     shop.pet_factory = get_factory()
     shop.show_pet()
-    print "=" * 10
+    print("=" * 10)

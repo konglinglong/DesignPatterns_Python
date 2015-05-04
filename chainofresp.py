@@ -8,19 +8,19 @@ class Car:
 
 def handle_fuel(car):
     if car.fuel < 10:
-        print "added fuel"
+        print("added fuel")
         car.fuel = 100
 
 
 def handle_km(car):
     if car.km > 10000:
-        print "made a car test."
+        print("made a car test.")
         car.km = 0
 
 
 def handle_oil(car):
     if car.oil < 10:
-        print "Added oil"
+        print("Added oil")
         car.oil = 100
 
 

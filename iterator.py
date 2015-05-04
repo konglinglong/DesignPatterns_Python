@@ -4,7 +4,7 @@ it = iter(x)
 try:
     while True:
         x = next(it)  # in Python 2, you would use it.next()
-        print x
+        print(x)
 except StopIteration:
     pass
 
@@ -18,6 +18,6 @@ it = foo(5)
 try:
     while True:
         x = next(it)  # in Python 2, you would use it.next()
-        print x
+        print(x)
 except StopIteration:
     pass

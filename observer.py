@@ -15,7 +15,7 @@ class Listener:
         subject.register(self)
 
     def notify(self, event):
-        print self.name, "received event", event
+        print(self.name, "received event", event)
 
 
 class Subject(AbstractSubject):
@@ -24,7 +24,7 @@ class Subject(AbstractSubject):
         self.data = None
 
     def getUserAction(self):
-        self.data = raw_input('Enter something to do:')
+        self.data = input('Enter something to do:')
         return self.data
 
     # Implement abstract Class AbstractSubject

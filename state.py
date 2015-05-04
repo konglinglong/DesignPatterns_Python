@@ -7,7 +7,7 @@ class State(object):
 
     def scan(self):
         """Scan the dial to the next station"""
-        print("Scanning... Station is", self.stations, self.name)
+        print(("Scanning... Station is", self.stations, self.name))
 
 
 class AmState(State):

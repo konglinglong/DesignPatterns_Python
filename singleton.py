@@ -12,8 +12,8 @@ a = Singleton()
 a.toto = 12
 
 b = Singleton()
-print b.toto
-print id(a), id(b)  # The same !!
+print(b.toto)
+print(id(a), id(b))  # The same !!
 
 
 # ---------- Borg's singletone ----------
@@ -27,8 +27,8 @@ a = Borg()
 a.toto = 12
 
 b = Borg()
-print b.toto
-print id(a), id(b)  # different ! but states are sames
+print(b.toto)
+print(id(a), id(b))  # different ! but states are sames
 
 # ---------- Alex's Martelli examples ----------
 

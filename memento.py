@@ -51,31 +51,31 @@ if __name__ == '__main__':
          self.value = '1111' # <- invalid value
          self.Increment()    # <- will fail and rollback
 
-   print
+   print()
    n = NumObj(-1)
-   print n
+   print(n)
    t = Transaction(n)
    try:
       for i in range(3):
          n.Increment()
-         print n
+         print(n)
       t.Commit()
-      print '-- commited'
+      print('-- commited')
       for i in range(3):
          n.Increment()
-         print n
+         print(n)
       n.value += 'x' # will fail
-      print n
+      print(n)
    except:
       t.Rollback()
-      print '-- rolled back'
-   print n
-   print '-- now doing stuff ...'
+      print('-- rolled back')
+   print(n)
+   print('-- now doing stuff ...')
    try:
       n.DoStuff()
    except:
-      print '-> doing stuff failed!'
+      print('-> doing stuff failed!')
       import traceback
       traceback.print_exc(0)
       pass
-   print n
+   print(n)
