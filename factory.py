@@ -45,7 +45,7 @@ class JapaneseGetter:
         """We'll punt if we don't have a translation"""
 
         try:
-            return str(self.trans[msgid], "utf-8")
+            return str(self.trans[msgid])
         except KeyError:
             return str(msgid)
 
