@@ -1,2 +1,2 @@
 test:
-	./run_tests.sh
+	py.test -x -vv -s ./
