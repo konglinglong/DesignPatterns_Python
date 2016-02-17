@@ -1,2 +1,6 @@
 test:
-	py.test -x -vv -s ./
+	# echo path
+	echo $DIR, `pwd`
+
+	# execute specified tests
+	py.test -x -vv -s `pwd`/
