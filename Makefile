@@ -3,4 +3,4 @@ test:
 	echo $DIR, `pwd`
 
 	# execute specified tests
-	py.test -x -vv -s `pwd`/
+	py.test command.py
