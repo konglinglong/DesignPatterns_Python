@@ -1,2 +1,2 @@
 test:
-	command.py
+	python command.py
