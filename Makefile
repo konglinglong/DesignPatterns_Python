@@ -1,2 +1,2 @@
 test:
-	`pwd`/command.py
+	command.py
