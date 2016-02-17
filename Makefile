@@ -1,6 +1,2 @@
 test:
-	# echo path
-	echo $DIR, `pwd`
-
-	# execute specified tests
-	py.test command.py
+	`pwd`/command.py
