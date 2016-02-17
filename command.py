@@ -85,7 +85,7 @@ class HistoryCommand(Command):
             i = i + 1
 
     def name(self):
-        print("history")
+        print("history.")
 
 
 # exit command
